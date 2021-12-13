@@ -1,0 +1,160 @@
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Atom</title>
+    <link rel="stylesheet" href="../css/computer.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-atom'></i>
+        <div class="logo_name">Atom</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="../index.html">
+          <i class='bx bx-devices' ></i>
+          <span class="links_name">New Products</span>
+        </a>
+         <span class="tooltip">New Products</span>
+      </li>
+      <li>
+       <a href="phone.html">
+         <i class='bx bx-mobile' ></i>
+         <span class="links_name">Phones</span>
+       </a>
+       <span class="tooltip">Phones</span>
+     </li>
+     <li>
+       <a href="computers.html">
+         <i class='bx bx-desktop' ></i>
+         <span class="links_name">Computers</span>
+       </a>
+       <span class="tooltip">Computers</span>
+     </li>
+     <li>
+       <a href="headphones.html">
+         <i class='bx bx-headphone' ></i>
+         <span class="links_name">Headphones</span>
+       </a>
+       <span class="tooltip">Headphones</span>
+     </li>
+     <li>
+        <a href="store.html">
+          <i class='bx bx-store' ></i>
+          <span class="links_name">Store</span>
+        </a>
+         <span class="tooltip">Store</span>
+      </li>
+     
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text"><i class='bx bx-atom'></i></div>
+      <div class="content-1">
+        <div class="features">
+          <h1 class="brand">New ABook-1</h1>
+          <h1>Some Features</h1>
+          <h4>• Screen Size: 15.6 Inches</h1>
+          <h4>• Operating System: Windows 10 Pro</h1>
+          <h4>• Screen Resolution: 3840 x 2160 pixels</h1>
+          <h4>• Processor: ‎5 GHz core_i7</h1>
+   <h4>• RAM: 16 GB DDR4</h1>
+  <h4>• Graphics Card Ram Size: 8 GB</h1>
+        </div>
+        <div class="features2">
+          
+         
+          <h4>• Dual 2MP camera system: Wide and Ultra Wide cameras</h1>
+          <h4>• Wide: ƒ/0.8 aperture</h1>
+          <h4>• Ultra Wide: ƒ/1.0 aperture and 120° field of view</h1>
+          
+        </div>
+        <div class="features3">
+          
+          <h4>• Wireless Type: Bluetooth, 802.11ax</h1>
+          <h4>• Number of USB 3.0 Ports: ‎3</h1>
+          <h4>• Chipset Brand: NVIDIA</h1>
+          <h4>• Connectivity Technology: Bluetooth, Wi-Fi, USB, HDMI</h4>
+          
+        </div>
+        <div class="price">
+          <a href="store.html">Only 1299$. Store ></a></h1>
+        </div>
+
+        <img src="../img/computer.png"></div>
+
+      
+  
+  </section>
+
+
+<footer class="footer-distributed">
+
+<div class="footer-right">
+
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+        
+        
+
+</div>
+
+<div class="footer-left">
+
+<p class="footer-links">
+<a class="link-1" href="../index.html">Home</a>
+
+<a href="store.html">Shopping</a>
+
+<a href="contact.html">Contact Us</a>
+</p>
+
+<p>Atom &copy; 2021</p>
+</div>
+
+</footer>
+
+ 
+
+  
+  
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+    menuBtnChange(); 
+  });
+
+ 
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
+</body>
+</html>
